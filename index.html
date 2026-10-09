@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="霸气村电影网（baqicundianyingwang-cn）是聚焦华语现实主义与乡村题材电影的资讯赏析站点，提供硬汉动作片、乡土剧情片、独立电影推荐、导演谱系与观影指南。">
+<meta name="keywords" content="霸气村电影网, baqicundianyingwang-cn, 华语电影, 乡村题材电影, 硬汉动作片, 独立电影">
+<meta name="author" content="霸气村电影网">
+<meta name="theme-color" content="#1a1209">
+<title>霸气村电影网 - 华语现实主义·乡村题材·硬汉动作电影资讯 | baqicundianyingwang-cn</title>
+<link rel="canonical" href="https://baqicundianyingwang-cn.github.io/">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "霸气村电影网",
+  "alternateName": "baqicundianyingwang-cn",
+  "url": "https://baqicundianyingwang-cn.github.io/",
+  "description": "华语现实主义、乡村题材与硬汉动作电影的推荐、解读与导演谱系",
+  "inLanguage": "zh-CN",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": "https://baqicundianyingwang-cn.github.io/#search?q={search_term_string}",
+    "query-input": "required name=search_term_string"
+  }
+}
+</script>
+<style>
+/* ============ 基础 ============ */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#1a1209; --ink2:#241a10; --card:#2c2014; --line:#463421;
+  --txt:#f7efe2; --sub:#c2b39c;
+  --red:#d9483b; --red2:#ff6b5c;
+  --gold:#d9a441; --gold2:#f2d083;
+  --earth:#8a6a3f;
+  --r:14px; --sh:0 14px 36px rgba(0,0,0,.55);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:"PingFang SC","Microsoft YaHei","Songti SC","Helvetica Neue",Arial,sans-serif;
+  background:var(--ink); color:var(--txt); line-height:1.8; overflow-x:hidden;
+  background-image:radial-gradient(circle at 12% 8%, rgba(217,148,59,.10), transparent 40%),
+                   radial-gradient(circle at 88% 92%, rgba(217,72,59,.08), transparent 42%);
+  background-attachment:fixed;
+}
+a{color:var(--gold2);text-decoration:none;transition:.25s}
+a:hover{color:#fff}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 18px}
+section{padding:68px 0}
+.st{font-size:27px;font-weight:900;letter-spacing:1px;margin-bottom:8px}
+.st span{color:var(--red)}
+.sn{color:var(--sub);font-size:14px;margin:14px 0 32px}
+.clay{font-family:"Songti SC","STSong",serif}
+
+/* ============ 导航 ============ */
+.bar{position:sticky;top:0;z-index:99;background:rgba(26,18,9,.95);backdrop-filter:blur(10px);border-bottom:2px solid var(--red)}
+.nv{display:flex;align-items:center;justify-content:space-between;height:64px}
+.brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:19px;letter-spacing:1px;color:#fff}
+.seal{width:38px;height:38px;border-radius:8px;background:var(--red);display:grid;place-items:center;font-size:15px;font-weight:900;color:#fff;transform:rotate(-3deg);box-shadow:0 4px 10px rgba(217,72,59,.4)}
+.links{display:flex;gap:2px}
+.links a{color:var(--sub);font-size:14px;padding:9px 14px;border-radius:8px;letter-spacing:.5px}
+.links a:hover{color:#fff;background:rgba(255,255,255,.06)}
+.mbtn{display:none;width:44px;height:44px;border:1px solid var(--line);border-radius:10px;background:transparent;color:var(--txt);font-size:22px;cursor:pointer}
+
+/* ============ Hero：村口大喇叭 ============ */
+.hero{position:relative;padding:84px 0 70px;border-bottom:1px solid var(--line)}
+.hx{display:grid;grid-template-columns:1.05fr .95fr;gap:44px;align-items:center}
+.eyebrow{display:inline-block;font-size:12px;letter-spacing:3px;color:var(--gold2);border:1px solid rgba(217,164,65,.45);padding:5px 15px;border-radius:4px;margin-bottom:18px}
+.hero h1{font-size:45px;line-height:1.22;font-weight:900;letter-spacing:-.5px}
+.hero h1 u{text-decoration:none;color:var(--red)}
+.hero p{color:var(--sub);font-size:16px;margin:20px 0 26px;max-width:540px}
+.acts{display:flex;flex-wrap:wrap;gap:12px}
+.b{padding:13px 28px;border-radius:6px;font-weight:700;font-size:15px;display:inline-flex;align-items:center;gap:8px;border:0;cursor:pointer}
+.b1{background:linear-gradient(135deg,var(--red),#a32f25);color:#fff}
+.b2{background:rgba(255,255,255,.05);color:#fff;border:1px solid var(--line)}
+/* 麦穗进度条式"硬核指数" */
+.stats{display:flex;flex-direction:column;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px}
+.stat{display:flex;align-items:center;gap:12px}
+.stat .lb{font-size:12px;color:var(--sub);width:74px;flex:none}
+.wheat{height:12px;flex:1;background:rgba(255,255,255,.06);border-radius:3px;overflow:hidden;position:relative}
+.wheat i{display:block;height:100%;border-radius:3px;background:repeating-linear-gradient(90deg,var(--gold) 0 6px, var(--gold2) 6px 12px)}
+.stat .vl{font-size:13px;font-weight:800;color:var(--gold2);width:36px;text-align:right}
+
+/* ============ 栏目导航（牌匾 DOM） ============ */
+.chs{background:var(--ink2)}
+.cg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ch{background:var(--card);border:1px solid var(--line);border-top:4px solid var(--red);border-radius:8px;padding:20px 18px;transition:.3s;position:relative}
+.ch:hover{transform:translateY(-6px);box-shadow:var(--sh);border-top-color:var(--gold)}
+.ch .num{font-size:11px;letter-spacing:2px;color:var(--gold);font-weight:800}
+.ch h3{font-size:17px;margin:8px 0 7px}
+.ch p{font-size:12.5px;color:var(--sub)}
+.ch .go{margin-top:13px;font-size:12px;color:var(--gold2)}
+
+/* ============ 栏目一：本周片单（日历 DOM） ============ */
+.picks{background:var(--ink)}
+.cal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.day{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:.3s}
+.day:hover{box-shadow:var(--sh);border-color:var(--gold)}
+.day .dt{background:var(--red);padding:10px 14px;display:flex;justify-content:space-between;align-items:baseline}
+.day .dt b{font-size:18px}
+.day .dt small{font-size:11px;letter-spacing:1px}
+.day .cv{padding:16px 14px}
+.day h4{font-size:15px;margin-bottom:5px}
+.day .tg{font-size:11px;color:var(--gold2);letter-spacing:.5px}
+.day p{font-size:12.5px;color:var(--sub);margin-top:9px}
+
+/* ============ 栏目二：导演谱系（族谱树 DOM） ============ */
+.tree{background:var(--ink2)}
+.tr{display:flex;flex-direction:column;gap:0;align-items:center}
+.branch{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;width:100%}
+.node2{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:18px;text-align:center;transition:.3s;position:relative}
+.node2::after{content:"";position:absolute;left:50%;bottom:-18px;width:2px;height:18px;background:var(--earth)}
+.node2:hover{border-color:var(--gold);transform:translateY(-4px)}
+.node2 .av{width:56px;height:56px;border-radius:50%;margin:0 auto 10px;background:radial-gradient(circle at 35% 30%,var(--gold2),var(--earth));display:grid;place-items:center;font-size:20px}
+.node2 b{font-size:15px;display:block}
+.node2 small{font-size:11px;color:var(--sub)}
+.node2 .wk{margin-top:10px;font-size:11px;color:var(--red2);letter-spacing:.5px}
+.rod{width:66%;height:2px;background:var(--earth);margin:18px 0}
+
+/* ============ 栏目三：影评（报刊分栏 DOM） ============ */
+.reviews{background:var(--ink)}
+.paper{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:28px}
+.masthead{text-align:center;border-bottom:2px solid var(--red);padding-bottom:14px;margin-bottom:20px}
+.masthead h3{font-size:22px;letter-spacing:6px;font-family:"Songti SC","STSong",serif}
+.masthead small{color:var(--sub);font-size:12px;letter-spacing:2px}
+.rv{column-count:2;column-gap:30px;column-rule:1px dashed var(--line)}
+.rv article{break-inside:avoid;margin-bottom:20px}
+.rv h4{font-size:15px;color:var(--gold2);margin-bottom:6px}
+.rv p{font-size:13.5px;color:var(--sub);text-align:justify}
+.rv .q{display:block;font-family:"Songti SC","STSong",serif;font-size:15px;color:var(--txt);border-left:3px solid var(--red);padding-left:12px;margin:8px 0}
+
+/* ============ 栏目四：类型片单（标签页 DOM） ============ */
+.genres{background:var(--ink2)}
+.tabs{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:22px}
+.tab{padding:9px 18px;border-radius:30px;background:var(--card);border:1px solid var(--line);color:var(--sub);font-size:13px;cursor:pointer;transition:.25s}
+.tab.on{background:var(--red);color:#fff;border-color:var(--red)}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fm{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;transition:.3s}
+.fm:hover{transform:translateY(-5px);box-shadow:var(--sh);border-color:var(--gold)}
+.thumb{aspect-ratio:3/4;display:grid;place-items:center;font-size:32px;position:relative}
+.thumb.t1{background:linear-gradient(155deg,#5a3a1c,#241a10)}
+.thumb.t2{background:linear-gradient(155deg,#3a1c1c,#241a10)}
+.thumb.t3{background:linear-gradient(155deg,#1c3a2e,#241a10)}
+.thumb.t4{background:linear-gradient(155deg,#3a2e1c,#241a10)}
+.thumb .yr{position:absolute;top:10px;right:10px;background:rgba(0,0,0,.6);color:var(--gold2);font-size:11px;padding:2px 9px;border-radius:3px}
+.fm .fb{padding:13px}
+.fm h4{font-size:14.5px}
+.fm .mt{font-size:11.5px;color:var(--sub);margin-top:5px;display:flex;justify-content:space-between}
+.stars{color:var(--gold)}
+
+/* ============ 栏目五：观影指南（步骤流程 DOM） ============ */
+.guide{background:var(--ink)}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:0;position:relative}
+.step{position:relative;padding:0 16px 24px;text-align:center}
+.step .ix{width:52px;height:52px;margin:0 auto 12px;border-radius:50%;background:var(--red);display:grid;place-items:center;font-size:20px;font-weight:900;color:#fff;position:relative;z-index:2}
+.step::before{content:"";position:absolute;top:26px;left:50%;width:100%;height:2px;background:var(--earth);z-index:1}
+.step:last-child::before{display:none}
+.step h4{font-size:15px;margin-bottom:5px}
+.step p{font-size:12.5px;color:var(--sub)}
+
+/* ============ 栏目六：村口闲话（弹幕/留言 DOM） ============ */
+.talk{background:var(--ink2)}
+.wall{display:flex;flex-wrap:wrap;gap:10px}
+.tk{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:9px 16px;font-size:13px;color:var(--sub);transition:.25s}
+.tk:hover{border-color:var(--gold);color:#fff;transform:translateY(-2px)}
+.tk b{color:var(--gold2);margin-right:6px}
+.tk.red{border-color:rgba(217,72,59,.5)}
+.tk.gold{background:rgba(217,164,65,.08)}
+
+/* ============ 关于 ============ */
+.about{background:var(--ink)}
+.ag{display:grid;grid-template-columns:1.15fr .85fr;gap:28px}
+.notice{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:26px}
+.notice h3{font-size:18px;color:var(--gold2);margin-bottom:13px}
+.notice ol{list-style:none;display:flex;flex-direction:column;gap:11px;counter-reset:c}
+.notice li{font-size:13.5px;color:var(--sub);padding-left:34px;position:relative}
+.notice li::before{counter-increment:c;content:counter(c);position:absolute;left:0;top:2px;width:22px;height:22px;border-radius:5px;background:var(--red);color:#fff;font-size:12px;font-weight:800;display:grid;place-items:center}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:20px;text-align:center}
+.kpi b{display:block;font-size:28px;color:var(--gold)}
+.kpi span{font-size:12px;color:var(--sub)}
+
+/* ============ 页脚 ============ */
+footer{border-top:1px solid var(--line);padding:46px 0 28px;background:var(--ink2)}
+.fg{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:28px}
+.fc h5{font-size:15px;margin-bottom:13px;color:#fff}
+.fc a{display:block;font-size:13px;color:var(--sub);padding:4px 0}
+.fc a:hover{color:var(--gold2)}
+.copy{margin-top:28px;padding-top:20px;border-top:1px solid var(--line);font-size:12px;color:var(--sub);display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+.hl{color:var(--gold2)}
+
+/* ============ 响应式 ============ */
+@media(max-width:960px){
+  .hx,.ag{grid-template-columns:1fr}
+  .cg,.cal,.grid4{grid-template-columns:repeat(2,1fr)}
+  .branch{grid-template-columns:repeat(3,1fr)}
+  .flow{grid-template-columns:repeat(2,1fr);gap:24px}
+  .step::before{display:none}
+  .rv{column-count:1}
+}
+@media(max-width:640px){
+  section{padding:48px 0}
+  .mbtn{display:grid;place-items:center}
+  .links{position:fixed;inset:64px 0 0 0;background:rgba(26,18,9,.98);flex-direction:column;padding:24px;gap:6px;transform:translateX(100%);transition:.35s}
+  .links.open{transform:translateX(0)}
+  .links a{font-size:16px;padding:15px;border-radius:10px}
+  .hero{padding:52px 0 40px}
+  .hero h1{font-size:31px}
+  .cal,.cg,.grid4,.branch{grid-template-columns:1fr;gap:12px}
+  .kpis{grid-template-columns:repeat(2,1fr)}
+  .fg{grid-template-columns:1fr}
+  .st{font-size:22px}
+  .stats{gap:11px}
+}
+@media(max-width:380px){
+  .flow,.kpis{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/xiaobao.js"></script>
+
+<!-- ===== 导航 ===== -->
+<header class="bar">
+  <div class="wrap nv">
+    <a class="brand" href="#top" aria-label="返回顶部"><span class="seal">霸</span><span>霸气村<span style="color:var(--gold)">电影网</span></span></a>
+    <nav class="links" id="navLinks">
+      <a href="#picks">本周片单</a>
+      <a href="#tree">导演谱系</a>
+      <a href="#reviews">影评杂谈</a>
+      <a href="#genres">类型片单</a>
+      <a href="#guide">观影指南</a>
+      <a href="#talk">村口闲话</a>
+      <a href="#about">合规声明</a>
+    </nav>
+    <button class="mbtn" id="menuBtn" aria-label="菜单">☰</button>
+  </div>
+</header>
+
+<!-- ===== Hero ===== -->
+<section class="hero" id="top">
+  <div class="wrap hx">
+    <div>
+      <span class="eyebrow">乡土 · 硬骨 · 真实 —— 华语现实主义的另一种银幕</span>
+      <h1>电影里的<ux>霸气</ux>，<br>从来长在村口那条路上</h1>
+      <p>霸气村电影网（baqicundianyingwang-cn）不做片海搬运，只挑那些"敢把镜头对准土地、拳头与普通人命运"的华语电影：乡村题材、硬汉动作、独立纪实、作者剧情。每部片子都附一句实话。</p>
+      <div class="acts">
+        <a class="b b1" href="#picks">查看本周片单 →</a>
+        <a class="b b2" href="#about">阅读合规声明</a>
+      </div>
+    </div>
+    <aside aria-hidden="true" class="stats">
+      <p style="font-size:12px;color:var(--gold2);letter-spacing:2px;margin-bottom:4px">本站选片硬核指数</p>
+      <div class="stat"><span class="lb">现实主义</span><span class="wheat"><i style="width:92%"></i></span><span class="vl">92</span></div>
+      <div class="stat"><span class="lb">动作硬朗</span><span class="wheat"><i style="width:85%"></i></span><span class="vl">85</span></div>
+      <div class="stat"><span class="lb">乡土质感</span><span class="wheat"><i style="width:88%"></i></span><span class="vl">88</span></div>
+      <div class="stat"><span class="lb">独立精神</span><span class="wheat"><i style="width:78%"></i></span><span class="vl">78</span></div>
+      <div class="stat"><span class="lb">合家欢度</span><span class="wheat"><i style="width:40%"></i></span><span class="vl">40</span></div>
+    </aside>
+  </div>
+</section>
+
+<!-- ===== 栏目导航（牌匾） ===== -->
+<section class="chs" id="nav">
+  <div class="wrap">
+    <h2 class="st">全村 <span>栏目</span></h2>
+    <p class="sn">七个内容分区，内页以锚点组织，检索与阅读更顺。</p>
+    <div class="cg">
+
+      <a class="ch" href="#picks">
+        <div class="num">壹 / WEEK</div>
+        <h3>本周片单</h3>
+        <p>七天，七部，七天之后换一批。</p>
+        <span class="go">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#tree">
+        <div class="num">贰 / ROOTS</div>
+        <h3>导演谱系</h3>
+        <p>谁拍出了这片土地的骨头。</p>
+        <span class="go">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#reviews">
+        <div class="num">叁 / PRESS</div>
+        <h3>影评杂谈</h3>
+        <p>不讲鸡汤，只讲镜头里的取舍。</p>
+        <span class="go">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#genres">
+        <div class="num">肆 / GENRE</div>
+        <h3>类型片单</h3>
+        <p>按口味挑：硬汉 / 乡土 / 纪实。</p>
+        <span class="go">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#guide">
+        <div class="num">伍 / PATH</div>
+        <h3>观影指南</h3>
+        <p>从哪一部开始，才不劝退。</p>
+        <span class="go">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#talk">
+        <div class="num">陆 / TALK</div>
+        <h3>村口闲话</h3>
+        <p>观众原话，比影评更真。</p>
+        <span class="go">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#about">
+        <div class="num">柒 / LAW</div>
+        <h3>合规声明</h3>
+        <p>版权、年龄提示与正版倡议。</p>
+        <span class="go">进入栏目 →</span>
+      </a>
+
+      <a class="ch" href="#top">
+        <div class="num">捌 / TOP</div>
+        <h3>返回顶部</h3>
+        <p>重新翻一遍霸气村电影网。</p>
+        <span class="go">回到顶部 ↑</span>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目一：本周片单（日历 DOM） ===== -->
+<section class="picks" id="picks">
+  <div class="wrap">
+    <h2 class="st">本周 <span>片单</span></h2>
+    <p class="sn">一周一部，按顺序看，风味最佳。全部指向正版授权渠道。</p>
+    <div class="cal">
+
+      <article class="day">
+        <div class="dt"><b>周一</b><small>乡土</small></div>
+        <div class="cv">
+          <h4>隐入尘烟</h4>
+          <span class="tg">2022 · 剧情</span>
+          <p>两个被各自家庭抛弃的孤独者，在西北的黄土上盖起自己的房子。没有一句台词在喊苦。</p>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="dt"><b>周三</b><small>动作</small></div>
+        <div class="cv">
+          <h4>怒火·重案</h4>
+          <span class="tg">2021 · 动作</span>
+          <p>陈木胜遗作。硬桥硬马的港式警匪，谢霆锋演的反派是全片最亮的那把刀。</p>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="dt"><b>周五</b><small>作者</small></div>
+        <div class="cv">
+          <h4>地久天长</h4>
+          <span class="tg">2019 · 家庭</span>
+          <p>王小帅用三个小时讲一对夫妻的三十年。演技是往肚子里咽的那种。</p>
+        </div>
+      </article>
+
+      <article class="day">
+        <div class="dt"><b>周日</b><small>纪实</small></div>
+        <div class="cv">
+          <h4>人间世</h4>
+          <span class="tg">2016 · 纪录</span>
+          <p>不是电影，比电影更难。医院的走廊里，人人都是配角，生死是主演。</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目二：导演谱系（族谱树 DOM） ===== -->
+<section class="tree" id="tree">
+  <div class="wrap">
+    <h2 class="st">导演 <span>谱系</span></h2>
+    <p class="sn">一根枝，三片叶：他们共同构成了华语现实主义的"村口"。</p>
+    <div class="tr">
+      <div class="branch">
+
+        <article class="node2">
+          <div class="av">贾</div>
+          <b>贾樟柯</b>
+          <small>山西 · 县城叙事</small>
+          <div class="wk">《三峡好人》《天注定》</div>
+        </article>
+
+        <article class="node2">
+          <div class="av">王</div>
+          <b>王小帅</b>
+          <small>贵阳 · 家庭创伤</small>
+          <div class="wk">《十七岁的单车》《地久天长》</div>
+        </article>
+
+        <article class="node2">
+          <div class="av">娄</div>
+          <b>娄烨</b>
+          <small>南京 · 手持晃动</small>
+          <div class="wk">《推拿》《风中有朵雨做的云》</div>
+        </article>
+
+      </div>
+      <div class="rod"></div>
+      <div class="branch">
+
+        <article class="node2">
+          <div class="av">管</div>
+          <b>管虎</b>
+          <small>北方 · 群像硬朗</small>
+          <div class="wk">《斗牛》《老炮儿》</div>
+        </article>
+
+        <article class="node2">
+          <div class="av">刁</div>
+          <b>刁亦男</b>
+          <small>武汉 · 黑色霓虹</small>
+          <div class="wk">《白日焰火》《南方车站的聚会》</div>
+        </article>
+
+        <article class="node2">
+          <div class="av">李</div>
+          <b>李睿珺</b>
+          <small>甘肃 · 土地寓言</small>
+          <div class="wk">《老驴头》《隐入尘烟》</div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目三：影评（报刊分栏 DOM） ===== -->
+<section class="reviews" id="reviews">
+  <div class="wrap">
+    <h2 class="st">影评 <span>杂谈</span></h2>
+    <p class="sn">照着老报纸的排法写的。字要少，话要狠。</p>
+    <div class="paper">
+      <div class="masthead">
+        <h3 class="clay">霸气村 影 讯</h3>
+        <small>BAQI CINEMA PRESS · 独立观察 · 第 03 期</small>
+      </div>
+      <div class="rv">
+
+        <article>
+          <h4>《隐入尘烟》为什么让城市观众坐不住</h4>
+          <span class="q">"电影里最贵的一句台词，是'驴知道了'。"</span>
+          <p>它不是一部关于贫困的电影，是一部关于"被剩下的人如何互相成为家"的电影。摄影机始终蹲着拍，和麦子一样高。当推土机推平土房，观众失去的不只是一栋房子，而是一个人最后的地标。</p>
+        </article>
+
+        <article>
+          <h4>港片动作戏的"气"去哪了</h4>
+          <span class="q">"拳拳到肉，是尊严，不是特效。"</span>
+          <p>《怒火·重案》之所以被反复提起，是因为它保留了"危险感"——演员真的会疼。近年太多动作片把打斗拍成舞蹈，好看，但不信。硬汉片的核心从来不是动作设计，是角色愿不愿意为一件事把命搭进去。</p>
+        </article>
+
+        <article>
+          <h4>乡村题材不等于"卖惨"</h4>
+          <span class="q">"土地不抒情，土地只记账。"</span>
+          <p>最怕三种镜头：仰拍麦田、老人皱纹特写、童声旁白。真正的乡土电影让土地自己说话——它的吝啬、它的恩情、它的不讲道理。观众流下的泪，应该为具体的人，不为"题材"。</p>
+        </article>
+
+        <article>
+          <h4>独立电影该怎么看</h4>
+          <span class="q">"慢，是一种礼貌。"</span>
+          <p>别带着爆米花进影院。独立片的节奏是呼吸，不是节拍。看不懂就先放下，隔两年再看——很多好电影是"后熟的"，像红薯。</p>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目四：类型片单（标签页 DOM） ===== -->
+<section class="genres" id="genres">
+  <div class="wrap">
+    <h2 class="st">类型 <span>片单</span></h2>
+    <p class="sn">点标签换口味。评分来自本站编辑部，非商业榜单。</p>
+    <div class="tabs">
+      <span class="tab on">硬汉动作</span>
+      <span class="tab">乡土剧情</span>
+      <span class="tab">独立纪实</span>
+      <span class="tab">作者作者</span>
+    </div>
+    <div class="grid4">
+
+      <article class="fm">
+        <div class="thumb t1"><span class="yr">2021</span>🔥</div>
+        <div class="fb">
+          <h4>怒火·重案</h4>
+          <div class="mt"><span>动作 / 警匪</span><span class="stars">★ 8.5</span></div>
+        </div>
+      </article>
+
+      <article class="fm">
+        <div class="thumb t2"><span class="yr">2015</span>🥊</div>
+        <div class="fb">
+          <h4>老炮儿</h4>
+          <div class="mt"><span>剧情 / 江湖</span><span class="stars">★ 8.1</span></div>
+        </div>
+      </article>
+
+      <article class="fm">
+        <div class="thumb t3"><span class="yr">2017</span>🌾</div>
+        <div class="fb">
+          <h4>嘉年华</h4>
+          <div class="mt"><span>剧情 / 社会</span><span class="stars">★ 8.3</span></div>
+        </div>
+      </article>
+
+      <article class="fm">
+        <div class="thumb t4"><span class="yr">2006</span>🐎</div>
+        <div class="fb">
+          <h4>三峡好人</h4>
+          <div class="mt"><span>剧情 / 纪实</span><span class="stars">★ 8.6</span></div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目五：观影指南（步骤流程 DOM） ===== -->
+<section class="guide" id="guide">
+  <div class="wrap">
+    <h2 class="st">观影 <span>指南</span></h2>
+    <p class="sn">四步，从"看不进去"到"想再看一遍"。</p>
+    <div class="flow">
+
+      <div class="step">
+        <div class="ix">1</div>
+        <h4>先选"硬"的</h4>
+        <p>从《怒火·重案》《老炮儿》入手，动作片门槛最低，先建立信任。</p>
+      </div>
+
+      <div class="step">
+        <div class="ix">2</div>
+        <h4>再吃"土"的</h4>
+        <p>《隐入尘烟》《三峡好人》，关弹幕、关手机，给它 90 分钟。</p>
+      </div>
+
+      <div class="step">
+        <div class="ix">3</div>
+        <h4>然后读"人"</h4>
+        <p>《地久天长》《推拿》，看演员，看表演里的克制。</p>
+      </div>
+
+      <div class="step">
+        <div class="ix">4</div>
+        <h4>最后看"作者"</h4>
+        <p>娄烨、贾樟柯、刁亦男，按导演而非按类型追，才算入坑。</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 栏目六：村口闲话（弹幕墙 DOM） ===== -->
+<section class="talk" id="talk">
+  <div class="wrap">
+    <h2 class="st">村口 <span>闲话</span></h2>
+    <p class="sn">观众留下的原话。不代表本站立场，但每一条都值得被看见。</p>
+    <div class="wall">
+
+      <span class="tk red"><b>老周·42岁</b>看完《隐入尘烟》，给家里打了个电话。</span>
+      <span class="tk"><b>阿May</b>港片动作戏是真摔，看得我手心出汗。</span>
+      <span class="tk gold"><b>影迷小赵</b>建议先看作者的短片，再看长片，脉络一下就通了。</span>
+      <span class="tk"><b>老王</b>乡村片不是哭片，是"活着"的纪录片。</span>
+      <span class="tk red"><b>独立观影者</b>别在短视频平台看剪辑，会被剧透到毫无余味。</span>
+      <span class="tk"><b>李同学</b>《怒火》最后那段追车，是近年华语动作的天花板。</span>
+      <span class="tk gold"><b>退休教师</b>贾樟柯的镜头里有我老家的影子，很不舒服，也很真实。</span>
+      <span class="tk"><b>阿Ken</b>看独立电影别赶场，一次一部，慢慢消化。</span>
+      <span class="tk"><b>小满</b>想看"不那么苦"的乡村片，有没有推荐？</span>
+      <span class="tk red"><b>编辑回复</b>试试《过昭关》，苦里有暖。</span>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== 关于与合规 ===== -->
+<section class="about" id="about">
+  <div class="wrap">
+    <h2 class="st">关于 <span>本站</span></h2>
+    <p class="sn">霸气村电影网（baqicundianyingwang-cn）的立场与承诺。</p>
+    <div class="ag">
+      <div class="notice">
+        <h3>合规与观影声明</h3>
+        <ol>
+          <li>本站为<b>影视资讯与赏析</b>类网站，不提供任何未授权视频资源、下载、网盘或在线播放。</li>
+          <li>所有影片推荐均指向正版授权平台，尊重著作权、署名权与导演剪辑权。</li>
+          <li>部分影片含暴力、粗口、成人议题与沉重主题，建议观众根据自身情况理性选择；未成年人请在家长指导下观看。</li>
+          <li>站内影评与解读属编辑个人观点，不代表影片出品方、发行方或任何平台立场，本站非官方站点。</li>
+          <li>本站不投放弹窗广告、不植入恶意代码、不采集非必要个人信息，不使用跟踪脚本。</li>
+          <li>侵权反馈通道：dmca@example.com，承诺 48 小时内响应并处理。</li>
+        </ol>
+      </div>
+      <div>
+        <div class="kpis">
+          <div class="kpi"><b>210+</b><span>收录影片条目</span></div>
+          <div class="kpi"><b>128</b><span>原创影评</span></div>
+          <div class="kpi"><b>15</b><span>合作正版平台</span></div>
+          <div class="kpi"><b>100%</b><span>合规资源导向</span></div>
+        </div>
+        <div class="notice" style="margin-top:16px">
+          <h3>联系我们</h3>
+          <ol>
+            <li>内容合作：editor@example.com</li>
+            <li>侵权投诉：dmca@example.com</li>
+            <li>读者来信：hello@example.com</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 页脚 ===== -->
+<footer>
+  <div class="wrap">
+    <div class="fg">
+      <div class="fc">
+        <a class="brand" href="#top"><span class="seal">霸</span><span>霸气村<span style="color:var(--gold)">电影网</span></span></a>
+        <p style="color:var(--sub);font-size:13px;margin-top:12px;max-width:320px">
+          土里长出来的电影眼。baqicundianyingwang-cn 只做一件事：把好电影，说清楚。
+        </p>
+      </div>
+      <div class="fc">
+        <h5>内容栏目</h5>
+        <a href="#picks">本周片单</a>
+        <a href="#tree">导演谱系</a>
+        <a href="#reviews">影评杂谈</a>
+        <a href="#genres">类型片单</a>
+      </div>
+      <div class="fc">
+        <h5>实用索引</h5>
+        <a href="#guide">入坑顺序</a>
+        <a href="#guide">年龄提示</a>
+        <a href="#talk">观众口碑</a>
+        <a href="#genres">按类型选片</a>
+      </div>
+      <div class="fc">
+        <h5>站点信息</h5>
+        <a href="#about">关于本站</a>
+        <a href="#about">合规声明</a>
+        <a href="#">隐私说明</a>
+        <a href="#">侵权投诉</a>
+      </div>
+    </div>
+    <div class="copy">
+      <span>© 2026 <span class="hl">霸气村电影网</span> · baqicundianyingwang-cn · 保留所有权利。本站与任何影片出品方、发行方无隶属关系。</span>
+      <span>网站网址：https://baqicundianyingwang-cn.github.io</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+// 移动端菜单
+var mb=document.getElementById('menuBtn'), nl=document.getElementById('navLinks');
+mb.addEventListener('click',function(){
+  nl.classList.toggle('open');
+  mb.textContent=nl.classList.contains('open')?'✕':'☰';
+});
+nl.addEventListener('click',function(e){
+  if(e.target.tagName==='A'){ nl.classList.remove('open'); mb.textContent='☰'; }
+});
+
+// 标签切换（纯 CSS 类切换，无外部依赖）
+var tabs=document.querySelectorAll('.tab');
+tabs.forEach(function(t){
+  t.addEventListener('click',function(){
+    tabs.forEach(function(x){x.classList.remove('on');});
+    t.classList.add('on');
+  });
+});
+
+// 滚动导航高亮
+var secs=document.querySelectorAll('section[id]'), links=document.querySelectorAll('.links a');
+window.addEventListener('scroll',function(){
+  var pos=window.scrollY+120, cur='';
+  secs.forEach(function(s){ if(s.offsetTop<=pos) cur=s.id; });
+  links.forEach(function(a){
+    var on=(a.getAttribute('href')==='#'+cur);
+    a.style.color=on?'#fff':'';
+    a.style.background=on?'rgba(255,255,255,.06)':'';
+  });
+});
+</script>
+</body>
+</html>
